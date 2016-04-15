@@ -70,12 +70,6 @@
 
 
 
-
-
-
-
-
-
 /*		General CSS		*/
 body{
 	background: #faf9f9;
@@ -91,14 +85,6 @@ a:focus{
 .container{
 	max-width: 1130px;
 }
-
-
-
-
-
-
-
-
 
 
 /*		Header 		*/
@@ -122,24 +108,21 @@ header .logo{
 }
 
 img.cct-logo {
-	max-width: 350px;
+	max-width: 130px;
 }
 
 header .burger_icon{
 	display: none;
 	float: right;
-	background: #ffffff;
+	background: #FFFFFF;
 	padding: 5px 10px;
 	text-transform: uppercase;
-
-	color: #003366;
+	color: #6d0101;
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
-
 	margin: 45px 10px 0 0;
 }
 
@@ -148,7 +131,7 @@ header .burger_icon:hover{
 }
 
 header .burger_icon.active{
-	background: #003366;
+	background: maroon;
 	color: #ffffff;
 }
 
@@ -199,22 +182,16 @@ header .social li:first-child{
 
 
 
-
-
-
-
-
-
-
 /*		Hero section 		*/
 
 .hero{
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 560px;
-	background: url('../img/custom/red_lid.png') no-repeat fixed center center;
+	height: 550px;
+	background: url('../img/custom/dayton_nightriver.jpg') no-repeat fixed center center;
 	background-size: cover;
+
 }
 
 .hero .caption{
@@ -226,19 +203,25 @@ header .social li:first-child{
 	-webkit-transform:translate(0,-50%);
 	-moz-transform:translate(0,-50%);
 	-o-transform:translate(0,-50%);
+	/* custom */
+	padding-bottom: 100px;
 }
 
 .hero .caption h1{
-	color: #525252;
+	color: #FFFFFF;
+	/*color: #525252;*/
 	font-family: "open_bold", Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
 	word-break: break-word;
-	padding-bottom: 300px;
+	padding-bottom: 0px;
+
+
 }
 
 .hero .caption p{
-	color: #6d6c6c;
+	color: #FFFFFF;
+	/*color: #6d6c6c;*/
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
@@ -264,7 +247,16 @@ a.app_store_btn{
 	font-size: 16px;
 }
 
-.play_icon,
+.redhr {
+    color: #000;
+    border-bottom: 1px solid #7B0000;
+}
+
+.fa-3x {
+    color: #ffffff;;
+}
+
+.fa-play-circle,
 .android_icon,
 .iphone_icon{
 	display: inline-block;
@@ -275,8 +267,15 @@ a.app_store_btn{
 	margin-bottom: 3px;
 }
 
-.play_icon{
-	background: url('../img/play.png') no-repeat;
+.fa-play-circle{
+	/*background: url('../img/play.png') no-repeat;*/
+	margin-top: -15px;
+
+
+}
+
+.fa-envelope-o {
+    color: #525252;
 }
 
 .iphone_icon{
@@ -294,7 +293,7 @@ a.app_store_btn:focus{
 	color: #005599!important;
 }
 
-a.app_store_btn:hover .play_icon{
+a.app_store_btn:hover .fa-play{
 	background: url('../img/play_hover.png') no-repeat;
 }
 
@@ -321,7 +320,7 @@ a.app_link:focus{
 }
 
 a.app_store_btn,
-.play_icon,
+.fa-play,
 .iphone_icon,
 .android_icon,
 a.app_link{
@@ -362,6 +361,9 @@ a.app_link{
 
 
 
+.zoomOutMsg {
+	color: #800000;
+}
 
 
 
@@ -544,22 +546,22 @@ a.app_link{
 
 /*		Testimonials section 		*/
 
-.testimonials{
+.markets{
 	padding: 100px 0;
 }
 
-.testimonials .testimonials_list{
+.markets .markets_list{
 	max-width: 820px;
 	margin: 0 auto;
 }
 
-.testimonials .testimonials_list blockquote{
+.markets .markets_list blockquote{
 	border: 0;
 	padding: 0;
 	margin: 0;
 }
 
-.testimonials .testimonials_list blockquote p{
+.markets .markets_list blockquote p{
 	color: #757171;
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -567,24 +569,24 @@ a.app_link{
 	line-height: 36px;
 }
 
-.testimonials .testimonials_list blockquote footer:before,
-.testimonials .testimonials_list blockquote footer:after{
+.markets .markets_list blockquote footer:before,
+.markets .markets_list blockquote footer:after{
 	content: none;
 }
 
-.testimonials .testimonials_list blockquote .author,
-.testimonials .testimonials_list blockquote .job{
+.markets .markets_list blockquote .author,
+.markets .markets_list blockquote .job{
 	display: block;
 }
 
-.testimonials .testimonials_list blockquote .author{
+.markets .markets_list blockquote .author{
 	color: #4b4848;
 	font-family: "open_semibold", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin-bottom: 10px;
 }
 
-.testimonials .testimonials_list blockquote .job{
+.markets .markets_list blockquote .job{
 	color: #6e6d6d;
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -629,7 +631,7 @@ a.app_link{
 #tslider .owl-controls .owl-prev:hover,
 #tslider .owl-controls .owl-next:hover{
 	cursor: pointer;
-	background: url('../img/nav_arrow_hover.png') no-repeat;
+	background: url('../img/nav_arrow.png') no-repeat;
 }
 
 #tslider .owl-controls .owl-prev:hover{
@@ -786,11 +788,6 @@ footer .copyright a{
 
 
 
-
-
-
-
-
 /*		Responsive CSS 		*/
 
 @media (max-width: 360px) {
@@ -810,6 +807,13 @@ footer .copyright a{
 
 	header .burger_icon{
 		display: block;
+        background-color:
+
+
+	}
+
+	img.cct-logo {
+		max-width: 100px;
 	}
 
 	header nav{
@@ -838,11 +842,12 @@ footer .copyright a{
 		display: block;
 		width: 100%;
 		padding: 20px 0;
-		border-bottom: 1px solid #003366;
+		border-bottom: 1px solid darkred;
+
 	}
 
 	header nav li:first-child a{
-		border-top: 1px solid #003366;
+		border-top: 1px solid darkred;
 	}
 
 	header .social{
@@ -853,6 +858,12 @@ footer .copyright a{
 		margin-left: 10px;
 	}
 
+	@media (max-width: 320px) {
+		img.cct-logo {
+			max-width: 100px;
+		}
+
+	}
 
 
 

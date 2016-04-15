@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="79d3ae52-24b4-47d6-9803-7f82877a4357" name="U Host CCT" url="http://cbstodd.vastserve.com/cct/index.html">
+        <fileTransfer host="ftp.vastserve.com" port="21" password="dfeedfcbdfc7dfc4dfdedfc5dfc4dfcfdf92" username="vasts_17757646">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

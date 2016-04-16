@@ -147,7 +147,7 @@ $(document).ready(function(){
 		e.preventDefault();	
 
 		var video_link = $(this).data('video');
-		video_link = '<iframe src="' + video_link + '" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+		video_link = '<iframe src="' + video_link + '" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen target="_blank"></iframe>';
 
 		$('.about_video').append(video_link).fadeIn(200);
 	});

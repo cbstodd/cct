@@ -375,22 +375,22 @@ a.app_link{
 
 /*		Featured on section 		*/
 
-.featured_on{
+.clients{
 	width: 100%;
 	padding: 25px 0;
 	background: #f3f3f3;
 }
 
-.featured_on ul{
+.clients ul{
 	margin: 0;
 }
 
-.featured_on li{
+.clients li{
 	position: relative;
 	height: 100%;
 }
 
-.featured_on li:first-child{
+.clients li:first-child{
 	margin-left: 0;
 }
 
@@ -792,7 +792,7 @@ footer .copyright a{
 /*		Responsive CSS 		*/
 
 @media (max-width: 360px) {
-	.featured_on li{
+	.clients li{
 		display: block;
 		width: 100%;
 	}
@@ -889,11 +889,11 @@ footer .copyright a{
 
 
 	/*		Featured on section		*/
-	.featured_on{
+	.clients{
 		padding: 25px 0 5px 0!important;
 	}
 
-	.featured_on ul li{
+	.clients ul li{
 		margin-bottom: 25px!important;
 	}
 

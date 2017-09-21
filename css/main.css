@@ -1,33 +1,9 @@
 /*
-
-
     Template Name   : Capture
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    License         : pixelhint.com/license
-
-
-    *****************************************
-
-
-    - Header
-    - Hero section
-    - Featured on seaction
-    - About section
-    - App features section
-    - Testimonials section
-    - Subscription section
-    - Footer
-    - Responsive CSS
-
-
+    Template Author : Colin Stodd (colinstodd.com) and pixelhint.com
+    Author Email    : colperdev@gmail.com and contact@pixelhint.com
+    License         : Creative Commons license and pixelhint.com/license
 */
-
-
-
-
-
-
 
 /*		Fonts		*/
 @font-face {
@@ -228,6 +204,8 @@ header .social li:first-child{
 	line-height: 30px;
 	margin: 15px 0 35px 0;
 }
+
+
 
 #slider .caption p{
 	margin: 0;

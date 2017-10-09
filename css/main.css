@@ -357,12 +357,6 @@ a.app_link{
 }
 
 
-
-
-
-
-
-
 /*		Featured on section 		*/
 
 .clients{
@@ -383,13 +377,6 @@ a.app_link{
 .clients li:first-child{
 	margin-left: 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -483,13 +470,6 @@ a.app_link{
 
 
 
-
-
-
-
-
-
-
 /*		App features 		*/
 
 .app_features{
@@ -525,13 +505,6 @@ a.app_link{
 .app_features .details:nth-child(3n+1){
 	clear: both;
 }
-
-
-
-
-
-
-
 
 
 

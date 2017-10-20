@@ -3,7 +3,15 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="79d3ae52-24b4-47d6-9803-7f82877a4357" name="U Host CCT" url="http://cbstodd.vastserve.com/cct/index.html">
-        <fileTransfer host="ftp.vastserve.com" port="21" password="dfeedfcbdfc7dfc4dfdedfc5dfc4dfcfdf92" username="vasts_17757646">
+        <fileTransfer host="ftp.vastserve.com" port="21" username="vasts_17757646" password="dfeedfcbdfc7dfc4dfdedfc5dfc4dfcfdf92">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="f737e38a-b2e2-4797-8133-1c5faeed3f04" name="CCTClosures Admin" url="http://server125.web-hosting.com">
+        <fileTransfer host="server125.web-hosting.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

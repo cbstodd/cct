@@ -7,7 +7,7 @@ $(document).ready(function() {
         var section_pos = $(section).position();
 
         if (section_pos){
-            $(window).scrollTo({ top: section_pos.top, left: '0px' }, 1000);
+            $(window).scrollTo({ top: section_pos.top, left: '0px' }, 1500);
         }
 
     });
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     //Nice scroll initialization
     $('html').niceScroll({
-        scrollspeed: 50,
+        scrollspeed: 0,
         autohidemode: false,
         cursorwidth: 8,
         cursorborderradius: 8,

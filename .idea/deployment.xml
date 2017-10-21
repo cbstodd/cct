@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Staging CCT Closures Admin" compareModeInSync="TIMESTAMP">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="Staging CCT Closures Admin" notifyRemoteChanges="true" compareModeInSync="TIMESTAMP">
     <serverData>
-      <paths name="CCT Closures Admin">
-        <serverdata>
-          <mappings>
-            <mapping deploy="public_html/" local="$PROJECT_DIR$" web="public_html/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="Sandbox CCT">
         <serverdata>
           <mappings>
-            <mapping deploy="sandbox.cctclosures.com" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/sandbox.cctclosures.com" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

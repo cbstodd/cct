@@ -10,14 +10,6 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="f737e38a-b2e2-4797-8133-1c5faeed3f04" name="CCTClosures Admin" url="http://server125.web-hosting.com">
-        <fileTransfer host="server125.web-hosting.com" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
     </option>
   </component>
 </project>

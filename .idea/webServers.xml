@@ -10,7 +10,23 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="f737e38a-b2e2-4797-8133-1c5faeed3f04" name="CCTClosures Admin" url="http://server125.web-hosting.com">
+      <webServer id="f737e38a-b2e2-4797-8133-1c5faeed3f04" name="CCT Closures Admin" url="http://server125.web-hosting.com">
+        <fileTransfer host="server125.web-hosting.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="6b10d16c-0101-4b86-8127-3553a78033ff" name="Staging CCT Closures Admin" url="http://server125.web-hosting.com/staging.cctclosures.com">
+        <fileTransfer host="server125.web-hosting.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="ec0034c5-8692-4a11-a89b-e856550b8203" name="Sandbox CCT" url="http://server125.web-hosting.com/sandbox.cctclosures.com">
         <fileTransfer host="server125.web-hosting.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

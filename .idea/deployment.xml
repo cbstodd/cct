@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="CCTClosures Admin" compareModeInSync="TIMESTAMP">
+  <component name="PublishConfigData" serverName="Staging CCT Closures Admin" compareModeInSync="TIMESTAMP">
     <serverData>
-      <paths name="CCTClosures Admin">
+      <paths name="CCT Closures Admin">
         <serverdata>
           <mappings>
             <mapping deploy="public_html/" local="$PROJECT_DIR$" web="public_html/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Sandbox CCT">
+        <serverdata>
+          <mappings>
+            <mapping deploy="sandbox.cctclosures.com" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Staging CCT Closures Admin">
+        <serverdata>
+          <mappings>
+            <mapping deploy="staging.cctclosures.com" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -17,6 +31,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

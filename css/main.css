@@ -235,6 +235,8 @@ header .social li:first-child {
 .revenue {
     background-color: #ffffff;
     padding: 20px 0;
+    border-top: 8px solid #525252;
+    /*border-top: 8px solid #630000;*/
 }
 
 img.logo {

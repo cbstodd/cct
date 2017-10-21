@@ -236,6 +236,7 @@ header .social li:first-child {
     background-color: #ffffff;
     padding: 20px 0;
     border-top: 8px solid #525252;
+    border-bottom: 1px solid #525252;
     /*border-top: 8px solid #630000;*/
 }
 

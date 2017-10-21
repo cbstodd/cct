@@ -75,6 +75,11 @@ a:hover.contact {
     text-transform: none;
     font-weight: bold;
 }
+
+p {
+    color: #494848;
+}
+
 /*		Header 		*/
 
 header{
@@ -92,7 +97,7 @@ header{
 
 header .logo{
 	display: table-cell;
-	margin: 40px 100px 0 0;
+	margin: 35px 100px 0 0;
 }
 
 img.cct-logo {
@@ -222,6 +227,17 @@ header .social li:first-child{
 	margin: 0;
 }
 
+.revenue {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 5px solid #525252;
+}
+
+img.logo {
+    max-width: 150px;
+    vertical-align: middle;
+}
+
 a.app_store_btn{
 	display: inline-block;
 	text-decoration: none;
@@ -236,6 +252,35 @@ a.app_store_btn{
 	font-family: "open_semibold", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
+
+
+img.bruderer {
+    padding-top: 30px;
+}
+
+img.heattek {
+    padding-top: 20px;
+}
+
+img.jms {
+    padding-top: 25px;
+    max-width: 160px;
+}
+
+img.ohio {
+    padding-top: 10px;
+    max-width: 100px;
+}
+
+img.stolle {
+    padding-top: 10px;
+    max-width: 120px;
+}
+
+img.ark {
+    padding-top: 20px;
+}
+
 
 .redhr {
     color: #000;
@@ -503,6 +548,45 @@ a.app_link{
 
 .app_features .details:nth-child(3n+1){
 	clear: both;
+}
+/*     Media                      */
+
+h3.cta_header {
+    padding-top: 50px;
+}
+
+.cta_body {
+    padding: 40px 0 70px 0;
+
+}
+
+p.cta_text {
+    font-size: 1.3em;
+}
+
+.cta_body > div >img {
+
+}
+#media {
+
+}
+
+.media {
+    min-height: 300px;
+    background-color: #eae9e8;
+    color: #595959;
+    border-bottom: 1px solid #ffffff;
+}
+
+.patent {
+    /*parallax*/
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: url('../img/custom/10001A-CCTCLOSURES_Page_1.png') no-repeat fixed center center;
+    /*background: url('../img/custom/dayton_nightriver.jpg') no-repeat fixed center center;*/
+    background-size: cover;
 }
 
 

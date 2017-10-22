@@ -230,7 +230,7 @@ header .social li:first-child{
 .revenue {
     background-color: #ffffff;
     padding: 20px 0;
-    border-bottom: 5px solid #525252;
+    /*border-bottom: 3px solid #525252;*/
 }
 
 object.logo {

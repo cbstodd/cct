@@ -233,9 +233,11 @@ header .social li:first-child{
     border-bottom: 5px solid #525252;
 }
 
-img.logo {
+object.logo {
     max-width: 150px;
-    vertical-align: middle;
+    vertical-align: top;
+    color: #ffffff;
+    margin-top: -5px;
 }
 
 a.app_store_btn{

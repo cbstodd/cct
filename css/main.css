@@ -442,7 +442,8 @@ a.app_link {
 }
 
 .about .features_list p {
-    color: #767272;
+    /*color: #767272;*/
+    color: #494848;
     font-family: "open_regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
     margin-bottom: 45px;
@@ -540,12 +541,15 @@ h3.cta_header {
 }
 
 .cta_body {
-    padding: 40px 0 70px 0;
+    padding: 40px 0 90px 0;
 
 }
 
 p.cta_text {
     font-size: 1.3em;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    margin-bottom: 45px;
+    line-height: 1.75em;
 }
 
 .cta_body > div > img {
@@ -586,7 +590,7 @@ p.cta_text.animated.wow.fadeInDown {
     width: 100%;
     height: 100px;
     /*background: url('../img/custom/10001A-CCTCLOSURES_Page_1.png') no-repeat fixed center center;*/
-    background: url('../img/custom/dayton_nightriver.jpg') no-repeat fixed center center;
+    /*background: url('../img/custom/raw_patent/chart_one_white_overlay.png') no-repeat fixed center center;*/
     background-size: cover;
 }
 
@@ -845,10 +849,8 @@ footer .copyright a {
     }
 
     /*img.cct-logo {*/
-        /*max-width: 100px;*/
-
+    /*max-width: 100px;*/
     /*}*/
-
     header nav {
         width: 100%;
         float: none;
@@ -891,8 +893,6 @@ footer .copyright a {
     }
 
     /* Partners logo */
-
-
     img.bruderer {
         /*padding-top: 30px;*/
         text-align: center;
@@ -927,69 +927,9 @@ footer .copyright a {
     }
 
     /*@media (max-width: 320px) {*/
-        /*img.cct-logo {*/
-            /*max-width: 100px;*/
-        /*}*/
+    /*img.cct-logo {*/
+    /*max-width: 100px;*/
+    /*}*/
 
-    }
-
-
-
-
-
-    /*		Hero section 		*/
-    .hero .caption {
-        margin-left: 0;
-    }
-
-    .app_store_btn {
-        display: block;
-        width: 90%;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-    }
-
-    /*		Featured on section		*/
-    .clients {
-        padding: 25px 0 5px 0 !important;
-    }
-
-    .clients ul li {
-        margin-bottom: 25px !important;
-    }
-
-    /*		About Section 		*/
-    .about .features_list {
-        text-align: center;
-        margin: 0;
-    }
-
-    .about .features_list ul li {
-        text-indent: 0;
-        background: transparent !important;
-        margin-bottom: 20px;
-    }
-
-    .about .features_list ul li:last-child {
-        margin: 0;
-    }
-
-    a.app_link {
-        display: block;
-        margin-top: 20px;
-    }
-
-    /*		Subscription section 		*/
-    .sub_box #mc-email,
-    .sub_box #mc_submit {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .sub_box #mc_submit {
-        margin-top: 20px;
-    }
 }
+

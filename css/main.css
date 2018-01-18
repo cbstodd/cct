@@ -765,6 +765,7 @@ p.cta_text.animated.wow.fadeInDown {
 
 .markets {
     padding: 100px 0;
+    background-color: #fdfdfd;
 }
 
 .markets .markets_list {

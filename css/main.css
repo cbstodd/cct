@@ -178,9 +178,169 @@ header .social li:first-child {
     position: relative;
     width: 100%;
     height: 550px;
-    background: url('../img/custom/dayton_nightriver.jpg') no-repeat fixed center center;
+    background: url('../img/custom/vid-hero.png') no-repeat fixed center center;
     background-size: cover;
+    background-attachment: fixed;
+}
 
+/* Video header */
+
+/* Global Styles */
+
+@import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
+
+html,body {
+    color:#fddaec;
+    font-family:"Josefin Sans", sans-serif;
+    font-size:100%;
+    height:100%;
+    line-height:1.45;
+}
+
+
+/* Video Overlay */
+
+#overlay {
+    background-color:rgba(0,0,0,.65);
+    height:100%;
+    left:0;
+    position:relative;
+    top:0;
+    transition:background-color 300ms ease;
+    width:100%;
+}
+
+.fade { background-color:rgba(0,0,0,.85) !important; }
+
+
+/* Hero Video + Fallback */
+
+#hero-vid {
+    backface-visibility:hidden;
+    background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
+    background-size:cover;
+    bottom:0;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    perspective:1000;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-1;
+}
+
+#hero-pic {
+    display:block;
+    height:auto;
+    width:100%;
+}
+
+#state {
+    bottom:0;
+    cursor:pointer;
+    font-size:2.25rem;
+    left:0;
+    line-height:1;
+    padding:2rem 2.5rem 1.65rem;
+    position:absolute;
+}
+
+
+/* Content Styles */
+
+#title {
+    backface-visibility:hidden;
+    left:0;
+    perspective:1000;
+    position:fixed;
+    width:100%;
+}
+
+#title h1 {
+    background-color:rgba(0,0,0,.5);
+    font-family:"Poiret One", sans-serif;
+    font-size:2.5rem;
+    padding:1rem 1.75rem;
+}
+
+#content {
+    background-color:#151515;
+    padding:2.5rem;
+    position:relative;
+    z-index:1;
+}
+
+#content p {
+    font-size:1.25rem;
+    letter-spacing:.02rem;
+    margin-bottom:1.3rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+    #overlay { height:auto; }
+}
+
+
+/* Visibility Helpers */
+
+@media only screen and (min-width:769px) {
+    .visible-mobile,.visible-tablet,.hidden-desktop { display:none !important; }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    .visible-mobile,.hidden-tablet,.visible-desktop { display:none !important; }
+}
+
+@media only screen and (max-width:479px) {
+    .hidden-mobile,.visible-tablet,.visible-desktop { display:none !important; }
+}
+
+
+/* OLD*/
+.parallax-container {
+    /* Define the height of the container
+    where the image will be */
+    height: 400px !important;
+}
+
+video[poster] {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99
+}
+
+.video-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 0;
+    background-size: cover;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    cursor: pointer;
 }
 
 .hero .caption {
@@ -356,6 +516,12 @@ a.app_link {
     -webkit-transition: all .2s linear;
 }
 
+.mission-statement {
+    background-color: #cccccc;
+    padding: 100px;
+    margin: 100px;
+}
+
 .about_video {
     position: relative;
     top: 0;
@@ -413,16 +579,18 @@ a.app_link {
 
 .about {
     padding: 100px 0;
+    margin-top: 200px;
+    z-index: 1;
 }
 
-.about .iphone {
+.about .videos-images {
     max-width: 339px;
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-.about .iphone img {
+.about .videos-images img {
     width: 100%;
     height: auto;
 }
@@ -598,6 +766,7 @@ p.cta_text.animated.wow.fadeInDown {
 
 .markets {
     padding: 100px 0;
+    /*background-color: #f6f8fc;*/
 }
 
 .markets .markets_list {
@@ -703,13 +872,14 @@ p.cta_text.animated.wow.fadeInDown {
     background-image: -o-linear-gradient(bottom, #630000 0%, #630000 0.27%, #800000 99.46%, #800000 100%);
     background-image: -webkit-linear-gradient(bottom, #630000 0%, #630000 0.27%, #800000 99.46%, #800000 100%);
     background-image: linear-gradient(bottom, #630000 0%, #630000 0.27%, #800000 99.46%, #800000 100%);
+    background-color: #630000;
 }
 
 .sub_box .cta_text {
     color: #fff;
     font-family: "open_regular", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    margin-bottom: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .sub_box #mc-email {
@@ -834,11 +1004,28 @@ footer .copyright a {
         display: block;
         width: 100%;
     }
+
+    /*.about {*/
+        /*padding: 0;*/
+        /*margin-top: 100px;*/
+        /*z-index: 1;*/
+    /*}*/
+
+    .video-wrapper {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
 
     /*		Header 		*/
+
+    /*.about {*/
+        /*padding: 100px 0;*/
+        /*margin-top: 300px;*/
+        /*z-index: 1;*/
+    /*}*/
+
     header object.logo {
         margin-right: 0;
     }
@@ -930,6 +1117,14 @@ footer .copyright a {
     /*img.cct-logo {*/
     /*max-width: 100px;*/
     /*}*/
+
+    @media (min-width: 768px) {
+        /*.about {*/
+            /*padding: 100px 0;*/
+            /*margin-top: 500px;*/
+            /*z-index: 1;*/
+        /*}*/
+    }
 
 }
 
